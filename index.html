@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shopping App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .shopping-list, .search-section, .recommendations {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .add-item input {
+            padding: 10px;
+            width: calc(100% - 22px);
+            margin-right: 10px;
+        }
+        .add-item button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .add-item button:hover {
+            background-color: #45a049;
+        }
+        .recommendations-list div {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .recommendations-list button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Grocery Shopping App</h1>
+    </header>
+
+    <nav>
+        <a href="#">Shopping List</a>
+        <a href="#">Search</a>
+        <a href="#">Recommendations</a>
+    </nav>
+
+    <div class="container">
+        <section class="shopping-list">
+            <h2>Create Your Shopping List</h2>
+            <input type="text" placeholder="Enter list name (e.g., Weekly Groceries)">
+            <div class="add-item">
+                <input type="text" placeholder="Add item to list...">
+                <button>Add Item</button>
+            </div>
+        </section>
+
+        <section class="recommendations">
+            <h2>Personalized Recommendations</h2>
+            <div class="recommendations-list">
+                <div>
+                    <span>Milk (1 liter)</span>
+                    <button>Add to List</button>
+                </div>
+                <div>
+                    <span>Eggs (12 pack)</span>
+                    <button>Add to List</button>
+                </div>
+                <div>
+                    <span>Bread (Whole grain)</span>
+                    <button>Add to List</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
